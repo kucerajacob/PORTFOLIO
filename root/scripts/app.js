@@ -80,6 +80,16 @@ $(function() {
             yPercent: 16,
         }, "start");
 
+        tl.to($(this).find(".waveac-stream"), 1, {
+            autoAlpha: 1,
+            yPercent: 16,
+        }, "start");
+
+        tl.to($(this).find(".waveac-profile"), 1, {
+            autoAlpha: 1,
+            yPercent: 16,
+        }, "start");
+
         scenes.push(
             new ScrollMagic.Scene({
                 offset: 150,
