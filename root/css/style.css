@@ -221,20 +221,23 @@ span {
     position: absolute;
     right: 8vw;
     width: 29vw;
-    top: -50px;
+    top: 40px;
     height: 34vw;
 }
 
 .hyperbot-text {
-    position: absolute;
-    top: 19vw;
+    position: relative;
+    top: 50%;
+    float: right;
+    transform: translateY(-50%);
     right: 0vw;
     width: 84%;
+    height: 100%;
 }
 
 .hyperbot-container-2 {
     position: relative;
-    top: -70px;
+    top: -90px;
     height: 34vw;
 }
 
@@ -268,5 +271,75 @@ span {
     display: block;
     width: 64vw;
     min-width: 900px;
+    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.3);
+}
+
+.waveac-text-container {
+    position: absolute;
+    left: 6.8vw;
+    width: 29vw;
+    top: 180px;
+    height: 33vw;
+}
+
+.waveac-text {
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.waveac-container {
+    position: absolute;
+    right: var(--sideMargins);
+    margin-right: var(--sideMargins);
+    height: 10px;
+    top: 180px;
+    width: 59vw;
+
+    background-color: #000;
+}
+
+.waveac-logo {
+    position: absolute;
+    right: 0;
+    margin-top: -4.5vw;
+    margin-right: -4.5vw;
+    width: 9vw;
+    z-index: 1000;
+    border-radius: 100%;
+    box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.2);
+}
+
+.waveac-track {
+    width: 100%;
+    border-radius: 0.5vw;
+}
+
+.waveac-container-2 {
+    height: 36vw;
+}
+
+.waveac-stream {
+    border-radius: 0.5vw;
+    position: absolute;
+    left: var(--sideMargins);
+    display: block;
+    width: 64vw;
+    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.3);
+}
+
+.waveac-trackzoom {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: var(--sideMargins);
+    float: right;
+    width: 31vw;
+    z-index: 1000;
+    border-radius: 0.5vw;
     box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.3);
 }
