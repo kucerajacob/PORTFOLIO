@@ -1,0 +1,272 @@
+/* @font-face {
+    font-family: "FreeSans";
+    src: url("C:\Users\kucer\Desktop\PORTFOLIO\SITE\root\fonts\FreeSans.woff") format("woff");
+} */
+
+:root {
+    --sideMarginsNav: 80px;
+    --sideMargins: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+section h1 {
+    color: #fff;
+    float: right;
+}
+
+html {
+    font-family: "FreeSans";
+    overflow: auto;
+}
+
+body {
+    background-color: #0D0E10;
+    overflow: hidden;
+}
+
+.navbar {
+    /* background: linear-gradient(180deg, rgba(13, 14, 16, 0.75) 0%, rgba(13, 14, 16, 0) 90%); */
+    /* background-color: rgba(13, 14, 16, 0.2); */
+    height: 160px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    vertical-align: middle;
+    position: relative;
+    left: var(--sideMarginsNav);
+}
+
+span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.navbar-items {
+    height: 160px;
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: var(--sideMarginsNav);
+}
+
+.navbar-item {
+    margin-left: 10vw;
+    padding: 15px 0px;
+}
+
+.navbar-item:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.4s ease-in-out;
+}
+
+#navbar-uiux {
+    position: relative;
+    top: 1px;
+}
+
+.page-001 {
+    height: 100%;
+    position: absolute;
+    left: -4px;
+    right: 0;
+}
+
+.number-001 {
+    height: 22vw;
+    position: absolute;
+    top: 50%;
+    margin-right: -50%;
+    opacity: 1;
+    transform: translate(0%, -50%);
+}
+
+.creatingvisual {
+    width: 45vw;
+    position: absolute;
+    top: 50%;
+    right: 96px;
+    margin-left: -50%;
+    opacity: 1;
+    transform: translate(0%, -50%);
+}
+
+.portfolio-arrow-container {
+    width: 45vw;
+    position: absolute;
+    right: 96px;
+    bottom: 0;
+}
+
+.portfolio-arrow {
+    height: 150px;
+    opacity: 1;
+    position: relative;
+    top: 40px;
+    margin-left: 50%;
+    right: 20px;
+    transform: translate(0%, -50%);
+}
+
+.scrollbar-track-y {
+    background-color: #0D0E10;
+}
+
+.scrollbar-thumb-y {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.casestudyssec {
+    position: absolute;
+    top: 186px;
+    left: var(--sideMargins);
+    width: 22vw;
+}
+
+.facebook-container {
+    position: absolute;
+    right: var(--sideMargins);
+    top: 260px;
+    height: 24vw;
+    width: 60vw;
+}
+
+.facebook-home {
+    position: absolute;
+    right: 0;
+    border-radius: 0.5vw;
+    box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    opacity: 1;
+}
+
+.facebook-phone {
+    position: absolute;
+    bottom: -20px;
+    left: -7vw;
+    width: 14vw;
+    border-radius: 0.5vw;
+    box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    opacity: 1;
+}
+
+.facebook-container-2 {
+    margin-top: 6vw;
+}
+
+.facebook-profile {
+    position: absolute;
+    left: var(--sideMargins);
+    width: 60vw;
+    border-radius: 0.5vw;
+    box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    z-index: 1000;
+}
+
+.facebook-contacts {
+    width: 36vw;
+    position: absolute;
+    right: var(--sideMargins);
+    margin-top: 14px;
+    box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
+}
+
+.hyperbot-container {
+    position: absolute;
+    left: var(--sideMargins);
+    height: 10px;
+    top: -50px;
+    width: 51vw;
+}
+
+.hyperbot-logo {
+    position: absolute;
+    right: 0;
+    margin-top: -4.5vw;
+    margin-right: -4.5vw;
+    width: 9vw;
+    z-index: 1000;
+    border-radius: 100%;
+    box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hyperbot-app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34vw;
+    border-radius: 0.5vw;
+    box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
+}
+
+.hyperbot-text-container {
+    position: absolute;
+    right: 8vw;
+    width: 29vw;
+    top: -50px;
+    height: 34vw;
+}
+
+.hyperbot-text {
+    position: absolute;
+    top: 19vw;
+    right: 0vw;
+    width: 84%;
+}
+
+.hyperbot-container-2 {
+    position: relative;
+    top: -70px;
+    height: 34vw;
+}
+
+.hyperbot-login {
+    position: absolute;
+    right: var(--sideMargins);
+    border-radius: 0.5vw;
+    height: 34vw;
+    z-index: 1000;
+    box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
+}
+
+.hyperbot-footer {
+    position: absolute;
+    top: 3vw;
+    left: var(--sideMargins);
+    width: 44vw;
+    border-radius: 0.5vw;
+    box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
+}
+
+.hyperbot-container-3 {
+    position: relative;
+    top: -70px;
+}
+
+.hyperbot-site {
+    border-radius: 0.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 64vw;
+    min-width: 900px;
+    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.3);
+}
