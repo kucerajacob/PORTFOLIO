@@ -1,6 +1,21 @@
+// include tags here
+
+const fadeInOutTime = 200;
+
+$(".clickable-img").click(function() {
+    $(".image-preview").fadeIn(fadeInOutTime);
+    $(".image-preview-container").fadeIn(fadeInOutTime);
+    $(".image-preview").attr("src", $(this).attr("src"));
+    console.log($(this).attr("src"));
+});
+
+$(".image-preview-container").click(function() {
+    $(".image-preview").fadeOut(fadeInOutTime);
+    $(this).fadeOut(fadeInOutTime);
+});
+
 $(function() {
-    let isChrome =
-        /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    let isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 
     console.log("is Chrome ? ", isChrome);
 
@@ -23,7 +38,7 @@ $(function() {
     }
 
     // initiate ScrollMagic Scene each section
-    $("section.container .section").each(function() {
+    $(".section").each(function() {
         let text = $(this).find(".text");
         let image = $(this).find(".image");
 

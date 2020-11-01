@@ -1,16 +1,21 @@
-/* @font-face {
+@font-face {
     font-family: "FreeSans";
     src: url("C:\Users\kucer\Desktop\PORTFOLIO\SITE\root\fonts\FreeSans.woff") format("woff");
-} */
+}
 
 :root {
     --sideMarginsNav: 80px;
     --sideMargins: 80px;
+    --navBarHeight: 132px;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+svg:hover {
+    cursor: default;
 }
 
 section {
@@ -27,27 +32,69 @@ section h1 {
 html {
     font-family: "FreeSans";
     overflow: auto;
+    background-color: #0D0E10;
 }
 
 body {
-    background-color: #0D0E10;
     overflow: hidden;
+}
+
+.image-preview-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 5000;
+    display: none;
+}
+
+.image-escape {
+    height: 30px;
+    position: absolute;
+    top: 41px;
+    right: 41px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.image-escape:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.image-preview {
+    height: 44vw;
+    max-height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7000;
+    border-radius: 0.5vw;
+}
+
+.clickable-img:hover {
+    cursor: pointer;
 }
 
 .navbar {
     /* background: linear-gradient(180deg, rgba(13, 14, 16, 0.75) 0%, rgba(13, 14, 16, 0) 90%); */
     /* background-color: rgba(13, 14, 16, 0.2); */
-    height: 160px;
+    height: var(--navBarHeight);
     position: fixed;
     top: 0;
     left: 0px;
     right: 0px;
     z-index: 1000;
+    mix-blend-mode: difference;
 }
 
 .navbar-logo {
+    height: 48px;
     vertical-align: middle;
     position: relative;
+    margin-left: -4px;
     left: var(--sideMarginsNav);
 }
 
@@ -58,27 +105,47 @@ span {
 }
 
 .navbar-items {
-    height: 160px;
+    height: var(--navBarHeight);
     display: inline;
     position: absolute;
     top: 20px;
     right: var(--sideMarginsNav);
 }
 
-.navbar-item {
+/* .navbar-item {
     margin-left: 10vw;
     padding: 15px 0px;
+    height: 14px;
+} */
+
+.navbar-item {
+    font-family: "FreeSans";
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 12vw;
+    position: relative;
+    top: -18px;
+    padding: 10px 0px;
+    border-bottom: 0px solid #fff;
+}
+
+.navbar-item:nth-child(4) {
+    padding-right: 0px !important;
 }
 
 .navbar-item:hover {
     cursor: pointer;
-    opacity: 0.5;
-    transition: 0.4s ease-in-out;
+    opacity: 1;
+    color: #F80055;
+    border-bottom: 3px solid #F80055;
 }
 
 #navbar-uiux {
+    height: 16px;
     position: relative;
-    top: 1px;
+    top: 0px;
 }
 
 .page-001 {
@@ -101,7 +168,7 @@ span {
     width: 45vw;
     position: absolute;
     top: 50%;
-    right: 96px;
+    right: 106px;
     margin-left: -50%;
     opacity: 1;
     transform: translate(0%, -50%);
