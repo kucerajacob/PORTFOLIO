@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: "FreeSans";
     src: url("C:\Users\kucer\Desktop\PORTFOLIO\SITE\root\fonts\FreeSans.woff") format("woff");
-}
+} */
 
 :root {
     --sideMarginsNav: 80px;
@@ -10,8 +10,8 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 svg:hover {
@@ -19,13 +19,14 @@ svg:hover {
 }
 
 section {
-    height: 100%;
-    width: 100%;
-    position: relative;
+    height: 100vh;
+    width: 100vw;
+	position: relative;
 }
 
 section h1 {
-    color: #fff;
+	color: #fff;
+	color: rgba(255, 255, 255, 0.1);
     float: right;
 }
 
@@ -83,9 +84,9 @@ body {
     /* background-color: rgba(13, 14, 16, 0.2); */
     height: var(--navBarHeight);
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0px;
-    right: 0px;
+	right: 0px;
     z-index: 1000;
     mix-blend-mode: difference;
 }
@@ -152,7 +153,7 @@ span {
     height: 100%;
     position: absolute;
     left: -4px;
-    right: 0;
+    right: 0px;
 }
 
 .number-001 {
@@ -178,7 +179,7 @@ span {
     width: 45vw;
     position: absolute;
     right: 96px;
-    bottom: 0;
+    bottom: 0px;
 }
 
 .portfolio-arrow {
@@ -216,7 +217,7 @@ span {
 
 .facebook-home {
     position: absolute;
-    right: 0;
+    right: 0px;
     border-radius: 0.5vw;
     box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
     width: 100%;
@@ -266,7 +267,7 @@ span {
 
 .hyperbot-logo {
     position: absolute;
-    right: 0;
+    right: 0px;
     margin-top: -4.5vw;
     margin-right: -4.5vw;
     width: 9vw;
@@ -277,8 +278,8 @@ span {
 
 .hyperbot-app {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     height: 34vw;
     border-radius: 0.5vw;
     box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
@@ -370,7 +371,7 @@ span {
 
 .waveac-logo {
     position: absolute;
-    right: 0;
+    right: 0px;
     margin-top: -4.5vw;
     margin-right: -4.5vw;
     width: 9vw;
@@ -400,7 +401,7 @@ span {
 }
 
 .waveac-trackzoom {
-    margin: 0;
+    margin: 0px;
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);

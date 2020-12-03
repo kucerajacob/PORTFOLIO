@@ -6,7 +6,6 @@ $(".clickable-img").click(function() {
     $(".image-preview").fadeIn(fadeInOutTime);
     $(".image-preview-container").fadeIn(fadeInOutTime);
     $(".image-preview").attr("src", $(this).attr("src"));
-    console.log($(this).attr("src"));
 });
 
 $(".image-preview-container").click(function() {
@@ -97,7 +96,7 @@ $(function() {
 
         tl.to($(this).find(".waveac-stream"), 1, {
             autoAlpha: 1,
-            yPercent: 16,
+            yPercent: 18,
         }, "start");
 
         tl.to($(this).find(".waveac-profile"), 1, {
