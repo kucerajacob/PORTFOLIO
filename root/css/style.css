@@ -42,6 +42,14 @@ body {
 	overflow: hidden;
 }
 
+#loading-wrap {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10000;
+	background-color: #0D0E10;
+}
+
 .image-preview-container {
 	background-color: rgba(0, 0, 0, 0.85);
 	width: 100vw;
@@ -75,6 +83,10 @@ body {
 	transform: translate(-50%, -50%);
 	z-index: 7000;
 	border-radius: 0.5vw;
+}
+
+.clickable-img {
+	margin-top: -31%;
 }
 
 .clickable-img:hover {
@@ -136,6 +148,11 @@ span {
 	outline: none;
 }
 
+.navbar-item-selected {
+	color: #F80055;
+	border-bottom: 3px solid #F80055;
+}
+
 .navbar-item:nth-child(4) {
 	padding-right: 0px !important;
 }
@@ -173,7 +190,8 @@ span {
 	width: 45vw;
 	position: absolute;
 	top: 50%;
-	right: 106px;
+	margin-top: -4%;
+	right: calc(var(--sideMargins) + 20px);
 	margin-left: -50%;
 	opacity: 1;
 	transform: translate(0%, -50%);
@@ -203,13 +221,6 @@ span {
 .scrollbar-thumb-y {
 	background-color: rgba(255, 255, 255, 0.1);
 }
-
-/* .casestudyssec {
-    position: absolute;
-    top: 42vh;
-    left: var(--sideMargins);
-	width: 32vw;
-} */
 
 .casestudyssec {
 	position: absolute;
@@ -301,15 +312,16 @@ span {
 .hyperbot-app {
 	position: absolute;
 	left: var(--sideMargins);
-	width: 50vw;
+	width: 52vw;
 	border-radius: 0.5vw;
 	box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
 }
 
 .hyperbot-text {
 	position: absolute;
+	margin-top: -15px;
 	right: calc(var(--sideMargins) + 50px);
-	width: 28vw;
+	width: 25vw;
 	z-index: 10000;
 }
 
@@ -326,6 +338,7 @@ span {
 	position: absolute;
 	left: var(--sideMargins);
 	width: 44vw;
+	margin-bottom: -100px;
 	border-radius: 0.5vw;
 	box-shadow: 0px 30px 32px rgba(0, 0, 0, 0.3);
 }
@@ -406,8 +419,6 @@ span {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #000;
-	border-top: 1px solid #fff;
 }
 
 .mobile {
@@ -470,14 +481,27 @@ span {
 		bottom: 0px;
 	}
 
-	.creatingvisual {
+	/* .creatingvisual {
+		width: 60vw;
 		position: absolute;
 		top: 50%;
-		right: 50%;
-		width: 80vw;
+		margin-top: 0%;
+		margin-left: 0%;
+		right: -10%;
 		opacity: 1;
-		transform: translate(50%, -50%);
-	}
+		transform: translate(0%, 50%);		
+	} */
+
+	/* .creatingvisual {
+		width: 45vw;
+		position: absolute;
+		top: 50%;
+		margin-top: -4%;
+		right: 106px;
+		margin-left: -50%;
+		opacity: 1;
+		transform: translate(0%, -50%);
+	} */
 
 	.mobile {
 		display: block;
