@@ -38,75 +38,145 @@ $(function() {
 
     // initiate ScrollMagic Scene each section
     $(".section").each(function() {
-        let text = $(this).find(".text");
-        let image = $(this).find(".image");
+        // let text = $(this).find(".text");
+        // let image = $(this).find(".image");
 
         let tl = new TimelineMax();
 
-        tl.to(text, 1, {
-            yPercent: -80,
-            rotation: 0
-        }, "start");
+        // tl.to($(this).find(".craigslist-phone"), 1, {
+        //     autoAlpha: 1,
+        //     yPercent: 25,
+        // }, "start");
 
-        tl.to(image, 1, {
-            autoAlpha: 1,
-            yPercent: 20,
-            rotation: 0
-        }, "start");
+		// CRAIGSLIST SECTION TEXT
 
         tl.to($(this).find(".casestudyssec"), 1, {
-            autoAlpha: 1,
-            yPercent: -18,
-        }, "start");
+            yPercent: 0,
+        }, "start").fromTo($(this).find(".casestudyssec"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0);
 
-        tl.to($(this).find(".facebook-home"), 1, {
-            autoAlpha: 1,
-            yPercent: -18,
-        }, "start");
+        tl.to($(this).find(".thegoal"), 1, {
+			yPercent: 0,
+		}, "start").fromTo($(this).find(".thegoal"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		1);
+		
+		tl.to($(this).find(".contentfirst"), 1, {
+            yPercent: 0,
+		}, "start").fromTo($(this).find(".contentfirst"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		1);
+		
+		tl.to($(this).find(".designperception"), 1, {
+            yPercent: 0,
+		}, "start").fromTo($(this).find(".designperception"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		1);
+		
 
-        tl.to($(this).find(".facebook-phone"), 1, {
-            autoAlpha: 1,
-            yPercent: 25,
-        }, "start");
+		// // CRAIGSLIST IMAGES
 
-        tl.to($(this).find(".facebook-profile"), 1, {
-            autoAlpha: 1,
-            yPercent: -10,
-        }, "start");
+        tl.to($(this).find(".craigslist-home"), 1, {
+            yPercent: 0,
+		}, "start").fromTo($(this).find(".craigslist-home"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0);
+		
+		tl.to($(this).find(".craigslist-searchresults"), 1, {
+            yPercent: 0,
+		}, "start").fromTo($(this).find(".craigslist-searchresults"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0.5);
 
-        tl.to($(this).find(".facebook-contacts"), 1, {
-            autoAlpha: 1,
-            yPercent: 25,
-        }, "start");
+        tl.to($(this).find(".craigslist-productpage"), 1, {
+            yPercent: 0,
+		}, "start").fromTo($(this).find(".craigslist-productpage"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0.5);
+		
+        tl.to($(this).find(".craigslist-chat"), 1, {
+            yPercent: 0,
+		}, "start").fromTo($(this).find(".craigslist-chat"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0.5);
 
-        tl.to($(this).find(".hyperbot-text-container"), 1, {
-            autoAlpha: 1,
-            yPercent: -16,
-        }, "start");
+		// HYPERBOT STUFf
 
         tl.to($(this).find(".hyperbot-login"), 1, {
-            autoAlpha: 1,
-            yPercent: -10,
-        }, "start");
+            yPercent: 0,
+        }, "start").fromTo($(this).find(".hyperbot-login"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0);
+
+        // tl.to($(this).find(".hyperbot-app"), 1, {
+        //     yPercent: -30,
+        // }, "start").fromTo($(this).find(".hyperbot-app"), 1, 
+		// 	{opacity: 0.1},
+		// 	{opacity: 1},
+		// 1);
+
+        tl.to($(this).find(".hyperbot-logo"), 1, {
+            yPercent: 0,
+        }, "start").fromTo($(this).find(".hyperbot-logo"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0.5);
+
+        tl.to($(this).find(".hyperbot-site"), 1, {
+            yPercent: 0,
+        }, "start").fromTo($(this).find(".hyperbot-site"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0.2);
+
+        tl.to($(this).find(".hyperbot-text"), 1, {
+            yPercent: 0,
+        }, "start").fromTo($(this).find(".hyperbot-text"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		1);
 
         tl.to($(this).find(".hyperbot-footer"), 1, {
-            autoAlpha: 1,
-            yPercent: 16,
-        }, "start");
+            yPercent: 0,
+        }, "start").fromTo($(this).find(".hyperbot-footer"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0);
 
         tl.to($(this).find(".waveac-stream"), 1, {
-            autoAlpha: 1,
-            yPercent: 18,
-        }, "start");
+            yPercent: 0,
+        }, "start").fromTo($(this).find(".waveac-stream"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0);
+
+        tl.to($(this).find(".waveac-track"), 1, {
+            yPercent: 0,
+        }, "start").fromTo($(this).find(".waveac-track"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0);
 
         tl.to($(this).find(".waveac-profile"), 1, {
-            autoAlpha: 1,
-            yPercent: 16,
-        }, "start");
+            yPercent: 0,
+        }, "start").fromTo($(this).find(".waveac-profile"), 1, 
+			{opacity: 0.1},
+			{opacity: 1},
+		0.5);
 
         scenes.push(
             new ScrollMagic.Scene({
-                offset: 150,
+				offset: 150,
                 triggerHook: "onEnter",
                 triggerElement: $(this)[0],
                 duration: $(window).height(),
@@ -117,15 +187,15 @@ $(function() {
                 //console.log('leave scene');
             })
             .on("enter", function() {
-                //console.log('enter scene');
+                console.log('enter scene');
             })
             .on("progress", function(e) {
                 //console.log("progress => ", e.progress);
             })
             .addTo(controller)
         );
-    });
-
+	});
+	
     // listener smooth-scrollbar, update controller
     scroll.addListener(function(status) {
         y = status.offset.y;
