@@ -66,7 +66,7 @@ $(function () {
 			.addTo(controller);
 
 		$(window).on("resize", function() {
-			// location.reload();
+			location.reload();
 			// parallaxScene.refresh();
 			//img.css("top", "80%");
 			console.log("WINDOW RESIZED.");
