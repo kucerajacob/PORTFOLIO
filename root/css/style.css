@@ -86,7 +86,7 @@ body {
 }
 
 .clickable-img {
-	margin-top: -31%;
+	margin-top: -30%;
 }
 
 .clickable-img:hover {
@@ -190,9 +190,7 @@ span {
 	width: 45vw;
 	position: absolute;
 	top: 50%;
-	margin-top: -4%;
 	right: calc(var(--sideMargins) + 20px);
-	margin-left: -50%;
 	opacity: 1;
 	transform: translate(0%, -50%);
 }
@@ -225,12 +223,12 @@ span {
 .casestudyssec {
 	position: absolute;
 	left: var(--sideMargins);
-	width: 38vw;
+	width: 34vw;
 }
 
 .thegoal {
 	position: absolute;
-	right: calc(var(--sideMargins) + 0px);
+	right: calc(var(--sideMargins) - 10px);
 	width: 28vw;
 }
 
@@ -427,41 +425,98 @@ span {
 }
 
 .mobile-img {
-	margin-top: 40px;
+	margin-top: 50px;
 	width: 100vw;
 }
 
-/* @media only screen and (max-width: 1700px) {
-	.heightMod {
-		margin-top: -300px;
-	}	
+@media only screen and (max-width: 1700px) {
+
 }
 
 @media only screen and (max-width: 1550px) {
-	.heightMod {
-		margin-top: -300px;
-	}	
+
 }
 
 @media only screen and (max-width: 1300px) {
-	.heightMod2 {
-		margin-top: -400px;
+	.casestudyssec {
+		width: 31vw;
 	}
 
-	.heightMod3 {
-		margin-top: -280px;
+	.thegoal {
+		width: 28vw;
+	}
+	
+	.contentfirst {
+		width: 33vw;
+	}
+	
+	.designperception {
+		margin-right: 30px;
+		width: 35vw;
 	}
 
-	.heightMod4 {
-		margin-top: -370px;
+	.hyperbot-text {
+		margin-top: -15px;
+		right: calc(var(--sideMargins) + 10px);
+		width: 25vw;
 	}
 
-	.heightMod5 {
-		margin-top: -340px;
+	.waveac-text {
+		width: 22vw;
+		margin-right: 34px;
 	}
-} */
 
-@media only screen and (max-width: 1000px) {
+	.waveac-trackzoom {
+		width: 26.5vw;
+	}
+
+	.waveac-graphs {
+		left: calc(var(--sideMargins) + 0px);
+		margin-top: -220px;
+		z-index: 5500;
+		width: 26vw;
+		border-radius: 0.5vw;
+		box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.3);
+	}
+
+	.waveac-stream,
+	.waveac-profile {
+		border-radius: 0.5vw;
+		position: absolute;
+		width: 64vw;
+		box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.3);
+		right: var(--sideMargins);
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.navbar-item {
+		margin-left: 6vw;
+	}
+	
+
+	.craigslist-home {
+		right: var(--sideMargins);
+		width: 55vw;
+	}
+	
+	.craigslist-searchresults {
+		left: var(--sideMargins);
+		width: 52vw;
+	}
+	
+	.craigslist-productpage {
+		right: var(--sideMargins);
+		width: 54vw;
+	}
+	
+	.craigslist-chat {
+		left: calc(var(--sideMargins) + 20px);
+		width: 38vw;
+	}
+}
+
+@media only screen and (max-width: 900px) {
 	.navbar-logo {
 		height: 48px;
 		position: absolute;
@@ -481,27 +536,22 @@ span {
 		bottom: 0px;
 	}
 
-	/* .creatingvisual {
-		width: 60vw;
-		position: absolute;
-		top: 50%;
-		margin-top: 0%;
-		margin-left: 0%;
-		right: -10%;
-		opacity: 1;
-		transform: translate(0%, 50%);		
-	} */
+	.portfolio-arrow {
+		height: 130px;
+	}
 
-	/* .creatingvisual {
-		width: 45vw;
+	.navbar-item {
+		display: none;
+	}
+
+	.creatingvisual {
+		width: 78vw;
 		position: absolute;
 		top: 50%;
-		margin-top: -4%;
-		right: 106px;
-		margin-left: -50%;
+		left: 50%;
 		opacity: 1;
-		transform: translate(0%, -50%);
-	} */
+		transform: translate(-50%, -50%);
+	}
 
 	.mobile {
 		display: block;

@@ -12,12 +12,6 @@ $(document).on("scroll", function () {
 	}
 });
 
-$(".creatingvisual").tilt({
-	scale: 1,
-	perspective: 800,
-	maxTilt: 20,
-});
-
 $(".clickable-img").click(function () {
 	$(".image-preview").fadeIn(fadeInOutTime);
 	$(".image-preview-container").fadeIn(fadeInOutTime);
@@ -56,7 +50,7 @@ $(function () {
 	$(".section").each(function () {
 		let tl = new TimelineMax();
 
-		var img = $(this).find(".clickable-img, .creatingvisual");
+		var img = $(this).find(".clickable-img");
 
 		var parallax = TweenMax.from(img, 1, {
 			y: "80%",
@@ -70,6 +64,13 @@ $(function () {
 			})
 			.setTween(parallax)
 			.addTo(controller);
+
+		$(window).on("resize", function() {
+			// location.reload();
+			// parallaxScene.refresh();
+			//img.css("top", "80%");
+			console.log("WINDOW RESIZED.");
+		});
 
 		// scenes.push(
 		//     new ScrollMagic.Scene({
