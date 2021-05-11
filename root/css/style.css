@@ -136,21 +136,21 @@ span {
 .navbar-item {
 	font-family: "FreeSans";
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 16px;
 	color: #fff;
 	display: inline-block;
 	margin-left: 12vw;
 	letter-spacing: -0.5px;
 	position: relative;
-	top: -18px;
-	padding: 10px 0px;
+	top: -19px;
+	padding: 13px 0px;
 	border-bottom: 0px solid #fff;
 	outline: none;
 }
 
 .navbar-item-selected {
 	color: #F80055;
-	border-bottom: 3px solid #F80055;
+	border-bottom: 4px solid #F80055;
 }
 
 .navbar-item:nth-child(4) {
@@ -161,7 +161,7 @@ span {
 	cursor: pointer;
 	opacity: 1;
 	color: #F80055;
-	border-bottom: 3px solid #F80055;
+	border-bottom: 4px solid #F80055;
 }
 
 #navbar-uiux {
@@ -417,6 +417,7 @@ span {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: -250px;
 }
 
 .mobile {
